@@ -15,6 +15,9 @@ import { AutocompleteDisplayExampleComponent } from './autocomplete/autocomplete
 import { AutocompleteAutoActiveFirstOptionExampleComponent } from './autocomplete/autocomplete-auto-active-first-option-example/autocomplete-auto-active-first-option-example.component';
 import { AutocompletePlainInputExampleComponent } from './autocomplete/autocomplete-plain-input-example/autocomplete-plain-input-example.component';
 import { AutocompleteOptgroupExampleComponent } from './autocomplete/autocomplete-optgroup-example/autocomplete-optgroup-example.component';
+import { BadgeOverviewExampleComponent } from './badge/badge-overview-example/badge-overview-example.component';
+import {MatBadgeModule} from "@angular/material/badge";
+import {MatIconModule} from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -24,7 +27,8 @@ import { AutocompleteOptgroupExampleComponent } from './autocomplete/autocomplet
     AutocompleteDisplayExampleComponent,
     AutocompleteAutoActiveFirstOptionExampleComponent,
     AutocompletePlainInputExampleComponent,
-    AutocompleteOptgroupExampleComponent
+    AutocompleteOptgroupExampleComponent,
+    BadgeOverviewExampleComponent
   ],
   imports: [
     AppRoutingModule,
@@ -34,6 +38,8 @@ import { AutocompleteOptgroupExampleComponent } from './autocomplete/autocomplet
     MatAutocompleteModule,
     MatFormFieldModule,
     MatInputModule,
+    MatBadgeModule,
+    MatIconModule,
     NgFor,
     ReactiveFormsModule,
   ],
