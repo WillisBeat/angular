@@ -18,6 +18,13 @@ import { AutocompleteOptgroupExampleComponent } from './autocomplete/autocomplet
 import { BadgeOverviewExampleComponent } from './badge/badge-overview-example/badge-overview-example.component';
 import {MatBadgeModule} from "@angular/material/badge";
 import {MatIconModule} from "@angular/material/icon";
+import {
+  BottomSheetOverviewExampleComponent,
+  BottomSheetOverviewExampleSheet
+} from './bottom-sheet/bottom-sheet-overview-example/bottom-sheet-overview-example.component';
+import {MatButtonModule} from "@angular/material/button";
+import {MatBottomSheetModule} from "@angular/material/bottom-sheet";
+import {MatListModule} from "@angular/material/list";
 
 @NgModule({
   declarations: [
@@ -28,7 +35,9 @@ import {MatIconModule} from "@angular/material/icon";
     AutocompleteAutoActiveFirstOptionExampleComponent,
     AutocompletePlainInputExampleComponent,
     AutocompleteOptgroupExampleComponent,
-    BadgeOverviewExampleComponent
+    BadgeOverviewExampleComponent,
+    BottomSheetOverviewExampleComponent,
+    BottomSheetOverviewExampleSheet
   ],
   imports: [
     AppRoutingModule,
@@ -40,6 +49,8 @@ import {MatIconModule} from "@angular/material/icon";
     MatInputModule,
     MatBadgeModule,
     MatIconModule,
+    MatBottomSheetModule,
+    MatListModule,
     NgFor,
     ReactiveFormsModule,
   ],
