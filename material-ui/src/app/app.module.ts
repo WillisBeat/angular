@@ -25,6 +25,8 @@ import {
 import {MatButtonModule} from "@angular/material/button";
 import {MatBottomSheetModule} from "@angular/material/bottom-sheet";
 import {MatListModule} from "@angular/material/list";
+import { ButtonOverviewExampleComponent } from './button/button-overview-example/button-overview-example.component';
+import {MatDividerModule} from "@angular/material/divider";
 
 @NgModule({
   declarations: [
@@ -37,7 +39,8 @@ import {MatListModule} from "@angular/material/list";
     AutocompleteOptgroupExampleComponent,
     BadgeOverviewExampleComponent,
     BottomSheetOverviewExampleComponent,
-    BottomSheetOverviewExampleSheet
+    BottomSheetOverviewExampleSheet,
+    ButtonOverviewExampleComponent
   ],
   imports: [
     AppRoutingModule,
@@ -51,6 +54,8 @@ import {MatListModule} from "@angular/material/list";
     MatIconModule,
     MatBottomSheetModule,
     MatListModule,
+    MatButtonModule,
+    MatDividerModule,
     NgFor,
     ReactiveFormsModule,
   ],
